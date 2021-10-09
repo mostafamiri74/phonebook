@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phonebook - Mostafa Miri</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- link to fontawesome icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+
+    <script defer src="app.js"></script>
+  </head>
+  <body dir="rtl">
+    <main>
+      <div class="main-box">
+        <input type="text" class="search-box" placeholder="جست و جو کنید ..." />
+        <div class="content-box">
+          <!-- contact-list here -->
+        </div>
+        <span class="add-form-btn"><b>+</b></span>
+        <span class="clear-list-btn">
+          <i class="fas fa-trash-alt clear-list-icon"></i>
+        </span>
+        <div class="add-form">
+          <label>نام :</label>
+          <input
+            class="form-input"
+            id="name"
+            type="text"
+            placeholder="نام مخاصب را وارد کنید ..."
+          />
+          <label>شماره تلفن :</label>
+          <input
+            class="form-input"
+            id="tel"
+            type="number"
+            placeholder="شماره مخاصب را وارد کنید ..."
+          />
+          <div class="form-btn-div">
+            <button id="add-contact-btn">
+              <i class="fas fa-check add__icon"></i>
+            </button>
+            <button id="close-form-btn">
+              <i class="fas fa-window-close close__icon"></i>
+            </button>
+          </div>
+        </div>
+        <div class="details-box">
+          <!-- details-list when click is here -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
